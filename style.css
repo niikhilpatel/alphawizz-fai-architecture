@@ -53,6 +53,15 @@
 
 /* banner slideshow section */
 
+
+/* .cards-img{
+  padding: 2px 0 0 2px;
+} */
+
+/* .carousel-inner{
+  /* height: 80%; */
+  /* margin: 2px; */
+} */
 .banner-text {
   float: left;
   padding: 0 0 0;
@@ -67,12 +76,12 @@ h1 {
   letter-spacing: 5px;
   margin-bottom: 0;
   color: #333333;
-  margin-left: 40px;
-  margin-top: 70px;
+  margin-left: 30px;
+  margin-top: 130px;
 }
 
 .banner-text .services-button {
-  margin-top: 95px;
+  margin-top: 115px;
   display: inline-block;
 }
 
@@ -82,9 +91,9 @@ h1 {
   font-size: 19px;
   text-decoration: none;
   font-weight: 400;
-  padding: 23px 43px 23px 47px;
+  padding: 23px 57px 23px 60px;
   letter-spacing: 3.25px;
-  margin-left: 40px;
+  margin-left: 30px;
 }
 
 /* PROJECT SECTION */
