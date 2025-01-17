@@ -14,6 +14,7 @@
 .logo a img {
   float: left;
   max-width: 66px;
+  /* height: 40px; */
   margin-top: 5px;
   margin-left: 30px;
   padding-left: 0;
@@ -50,108 +51,96 @@
   font-size: 18px;
 }
 
-/* banner slideshow section */
+/* first section */
 
-.banner-text {
-  float: left;
-  padding: 0 0 0;
-  width: 37%;
+.row {
+  margin-top: 15px;
+}
+.project-heading {
+  margin-top: 50px;
+}
+.project-heading h1 {
+  max-width: 444px;
+  font-family: "Josefin Sans";
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 60px;
+  letter-spacing: 3px;
+  line-height: 96px;
+  margin: 0 -33px;
 }
 
-h1 {
-  margin: 0;
-  line-height: 0.97;
-  font-weight: 400;
-  font-size: 50px;
-  letter-spacing: 5px;
-  margin-bottom: 0;
-  color: #333333;
-  margin-left: 30px;
-  margin-top: 130px;
+/* section */
+.project-main-section .container-fluid {
+  padding: 0;
 }
 
-.banner-text .services-button {
-  margin-top: 115px;
-  display: inline-block;
-}
-
-.services-button {
-  background-color: #333333;
-  color: #fffdff !important;
-  font-size: 19px;
-  text-decoration: none;
-  font-weight: 400;
-  padding: 23px 57px 23px 60px;
-  letter-spacing: 3.25px;
-  margin-left: 30px;
-}
-
-/* PROJECT SECTION */
-
-
-.project {
-  padding-top: 160px;
-  overflow-x: hidden;
-  padding-bottom: 150px;
-}
-
-.project .row {
+/* First Row (Full width) */
+.project-main-section .row:first-child {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
-}
-.project .row .project-box {
-  position: relative;
-  height: 442px;
-  margin-bottom: -200px;
 }
 
-.project .row .project-box:nth-child(1),
-.project .row .project-box:nth-child(2) {
-  flex: 0 0 calc(50% - 15px);
-}
-
-.project .row .project-box:nth-child(3),
-.project .row .project-box:nth-child(4),
-.project .row .project-box:nth-child(5) {
-  flex: 0 0 calc(33.33% - 20px);
-}
-
-.product-img {
+.project-box.full-width {
   width: 100%;
-  height: 100%;
+  padding: 15px;
+}
+
+.project-main-section .row:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-box.half-width {
+  width: 50%;
+  padding: 10px;
+}
+
+.project-img {
+  position: relative;
+  width: 100%;
+}
+
+.project-img img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  /* background: rgba(0, 0, 0, 0.5); */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0s 0.3s;
+}
+
+.overlay-text h3 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.project-box {
+  position: relative;
   overflow: hidden;
 }
 
-.product-img img {
-  max-width: 100%;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  transition: all 0.5s ease-in-out;
-}
-
-.project .button {
-  float: right;
-  margin-right: 240px;
-  padding: 22px 43px 20px 47px;
-}
-
-.button {
-  background-color: #333333;
-  color: #fffdff !important;
-  font-size: 19px;
-  text-decoration: none;
-  font-weight: 400;
-  padding: 23px 43px 23px 47px;
-  letter-spacing: 3.25px;
-  margin-left: 40px;
+.project-box:hover .overlay-text {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease, visibility 0s 0s;
 }
 
 /* fOOTER */
 
-.row {
+footer .row {
   display: flex;
   gap: 80px;
   padding: 0;
@@ -180,8 +169,8 @@ footer {
   padding: 10px;
 }
 
-.third-column{
-  gap :20px;
+.third-column {
+  gap: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -287,7 +276,6 @@ footer .footer-text p {
   text-decoration: none;
   display: flex;
   gap: 3px;
-  
 }
 
 .footer-box p a {
